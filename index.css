@@ -192,6 +192,7 @@ body {
     background-color: #141414;
     height: fit-content;
     display: flex;
+    justify-content: center;
 }
 
 .about__container {
@@ -201,14 +202,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 25px;
-    /* border: 2px solid red; */
+    max-width: 375px;
 }
 
 .about__text--wrapper {
     display: flex;
     flex-direction: column;
     color: #fff;
-    text-align: left;
+    text-align: center;
     padding: 0px 25px;
 }
 
@@ -265,6 +266,7 @@ body {
 
     .about__text--wrapper {
         margin-left: 50px;
+        text-align: left;
     }
 
     .about__img {
