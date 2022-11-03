@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------------------ */
+
+/* Sección navbar */
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.navbar__container {
+    background-color: #0C0C0C;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 25px;
+    align-items: center;
+}
+
+.navbar__logo {
+    width: 130px;
+    height: 24px;
+}
+
+.navbar__links--wrapper {
+    display: none;
+}
+
+.navbar__btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__bar {
+    height: 4px;
+    width: 36px;
+    margin-bottom: 6px;
+    background-color: #C790F1;
+}
+
+@media screen and (min-width: 376px) {
+
+    .navbar__container {
+        height: 100px;
+        padding: 0px 42px;
+    }
+
+    .navbar__logo {
+        width: 200px;
+        height: 36px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar__container {
+        padding: 0px 80px;
+    }
+
+    .navbar__btn {
+        display: none;
+    }
+
+    .navbar__links--wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;    
+    }
+
+    .navbar__links {
+    list-style-type: none;
+    }
+
+    .navbar__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1.1rem;
+    font-family: 'Fira Code', monospace;
+    }
+
+    .navbar__link:hover {
+        color: #5092FF;
+        transition: all 0.3s ease;
+    }
+
+    .navbar__logo:hover {
+        scale: 1.05;
+    }
+}
+
+/* ------------------------------------ */
+
+/* Sección Hero */
+
+.hero {
+    background-color: #0C0C0C;
+    height: fit-content;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-family: "fira code", monospace;
+    text-align: center;
+    background-color: #C790F1;
+    background-image: linear-gradient(to right, #FF6DC6 0%, #C790F1 50%, #5092FF 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /* border: red solid 2px; */
+    margin: 54px 25px 54px 25px;
+}
+
+.hero__img {
+    width: 301px;
+    height: 300px;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 281px) {
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__img {
+        width: 251px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 541px) {
+    .hero__container{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 42px;
+    }
+
+    .hero__title {
+        text-align: left;
+        font-size: 48px;
+        max-width: 350px;
+    }
+
+    .hero__img{
+        margin-top: 24px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .hero__container{
+        padding: 0px 80px;
+        justify-content: space-between;
+    }
+
+    .hero__title {
+        font-size: 70px;
+        max-width: 500px;
+    }
+
+    .hero__img {
+        width: 441px;
+        height: 440px;
+        margin-top: 64px;
+    }
+
+}
+
+/* Sección About Me */
+
+.about {
+    background-color: #141414;
+    height: fit-content;
+    display: flex;
+}
+
+.about__container {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    /* border: 2px solid red; */
+}
+
+.about__text--wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    padding: 0px 25px;
+}
+
+.about__title {
+    font-family: "fira code", monospace;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.about__description {
+    font-family:'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.about__img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 281px) {
+
+    .about__container {
+        padding: 0 10px;
+    }
+
+    .about__title {
+        font-size: 1.1rem;
+    }
+
+    .about__description {
+        font-size: 0.875rem;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    
+    .about {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+    }
+
+    .about__container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 700px;
+    }
+
+    .about__text--wrapper {
+        margin-left: 50px;
+    }
+
+    .about__img {
+        height: 180px;
+        width: 180px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/* Sección servicios */
+
+.services {
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 25px;
+    /* border: 2px solid red; */
+}
+
+.services__title {
+    margin-bottom: 3rem;
+    font-family: "fira code", monospace;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0px 25px;
+    grid-gap: 3rem;
+    max-width: 375px;
+}
+
+.services__card--title {
+    font-family: "fira code", monospace;
+    font-size: 1.4rem;
+    color: #C790F1;
+}
+
+.services__card--description {
+    font-family: "poppins", sans serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 281px) {
+    .services__title {
+        font-size: 1.4rem;
+    }
+
+    .services__card--title {
+        font-size: 1.2rem;
+    }
+
+    .services__card--description {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .services {
+        padding: 42px 45px;
+    }
+    .services__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .services {
+        padding: 64px 80px;
+    }
+
+    .services__title {
+        margin-bottom: 5rem;
+    }
+
+    .services__cards {
+        max-width: 100%;
+        grid-gap: 4rem;
+    }
+}
