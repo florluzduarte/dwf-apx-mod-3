@@ -86,48 +86,163 @@
     <!-- Sección servicios -->
 
     <section class="services">
-      <h2 class="services__title">Mis servicios</h2>
-      <div class="services__cards">
-        <div class="services__card">
-          <img
-            src="./assets/web-developer-emoji.png"
-            alt="emoji web developer mujer"
-            class="services__card--img"
-          />
-          <h3 class="services__card--title">Web Developer</h3>
-          <p class="services__card--description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
-        </div>
-        <div class="services__card">
-          <img
-            src="./assets/product-design-emoji.png"
-            alt="emoji computadora con logo de figma"
-            class="services__card--img"
-          />
-          <h3 class="services__card--title">Product designer</h3>
-          <p class="services__card--description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
-        </div>
-        <div class="services__card">
-          <img
-            src="./assets/content-creator-emoji.png"
-            alt="emoji computadora con logo de figma"
-            class="services__card--img"
-          />
-          <h3 class="services__card--title">Content creator</h3>
-          <p class="services__card--description">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
+      <div class="services__container">
+        <h2 class="services__title">Mis servicios</h2>
+        <div class="services__cards">
+          <div class="services__card">
+            <img
+              src="./assets/web-developer-emoji.png"
+              alt="emoji web developer mujer"
+              class="services__card--img"
+            />
+            <h3 class="services__card--title">Web Developer</h3>
+            <p class="services__card--description">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="services__card">
+            <img
+              src="./assets/product-design-emoji.png"
+              alt="emoji computadora con logo de figma"
+              class="services__card--img"
+            />
+            <h3 class="services__card--title">Product designer</h3>
+            <p class="services__card--description">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="services__card">
+            <img
+              src="./assets/content-creator-emoji.png"
+              alt="emoji computadora con logo de figma"
+              class="services__card--img"
+            />
+            <h3 class="services__card--title">Content creator</h3>
+            <p class="services__card--description">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Sección Escribime -->
+
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Escribime</h2>
+        <div class="contact__form--wrapper">
+          <form action="" method="get" autocomplete="on">
+            <div class="contact__input--wrapper">
+              <label for="name" class="contact__form--label">NOMBRE</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ingresá tu nombre completo"
+                class="contact__form--input"
+                required
+              />
+            </div>
+            <div class="contact__input--wrapper">
+              <label for="email" class="contact__form--label">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingresá tu correo electrónico"
+                class="contact__form--input"
+                required
+              />
+            </div>
+            <div class="contact__input--wrapper">
+              <label for="message" class="contact__form--label">MENSAJE</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="8"
+                placeholder="Dejanos tu mensaje o consulta"
+                class="contact__form--input"
+              ></textarea>
+            </div>
+          </form>
+          <button class="contact__btn">Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Footer -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links--container">
+          <div class="footer__logo--wrapper">
+            <img
+              src="./assets/Logo_svg.svg"
+              alt="Logo unicornio dev"
+              class="footer__logo"
+            />
+            <p class="footer__copyright">© 2022</p>
+          </div>
+
+          <div class="footer__social-media--container">
+            <div class="footer__social-media--wrapper">
+              <a
+                href="https://www.instagram.com/florluzduarte/"
+                target="_blank"
+              >
+                <div class="footer__social-media--link">
+                  <img
+                    src="./assets/instagram-logo.svg"
+                    alt="Instagram logo"
+                    class="footer__social-media--logo"
+                  />
+                  <p class="footer__social-media--title">Instagram</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="footer__social-media--wrapper">
+              <a
+                href="https://www.linkedin.com/in/florluzduarte/"
+                target="_blank"
+              >
+                <div class="footer__social-media--link">
+                  <img
+                    src="./assets/linkedin-logo.svg"
+                    alt="LinkedIn logo"
+                    class="footer__social-media--logo"
+                  />
+                  <p class="footer__social-media--title">LinkedIn</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="footer__social-media--wrapper">
+              <a href="https://github.com/florluzduarte" target="_blank">
+                <div class="footer__social-media--link">
+                  <img
+                    src="./assets/github-logo.svg"
+                    alt="GitHub Logo"
+                    class="footer__social-media--logo"
+                  />
+                  <p class="footer__social-media--title">GitHub</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__credits">
+        <p class="footer__credits--text">Hecho con 🖤 por FlorLuzDuarte</p>
+      </div>
+    </footer>
   </body>
 </html>
