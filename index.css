@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
 }
-/* 
-html{
-    display: flex;
-    justify-content: center;
-} */
 
 html, body {
     box-sizing: border-box;
@@ -37,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    padding: 0px 45px;
+    margin: 0px 25px;
     align-items: center;
 }
 
@@ -66,7 +61,7 @@ body {
 
     .navbar__container {
         height: 100px;
-        padding: 0px 42px;
+        margin: 0px 45px;
     }
 
     .navbar__logo {
@@ -77,7 +72,8 @@ body {
 
 @media screen and (min-width: 769px) {
     .navbar__container {
-        padding: 0px 80px;
+        /* padding: 0px 80px; */
+        margin: 0px 64px;
     }
 
     .navbar__btn {
@@ -113,10 +109,18 @@ body {
     }
 }
 
+@media screen and (min-width: 1919px) {
+    .navbar__container {
+        margin: 0px 300px;
+    }
+}
+
 
 /* ------------------------------------ */
 
 /* Sección Hero */
+
+/* ------------------------------------ */
 
 .hero {
     background-color: #0C0C0C;
@@ -133,7 +137,7 @@ body {
     justify-content: space-around;
     align-items: center;
     max-width: 1366px;
-    padding: 0px 25px;
+    margin: 0px 25px;
 }
 
 .hero__title {
@@ -143,6 +147,7 @@ body {
     background-color: #C790F1;
     background-image: linear-gradient(to right, #FF6DC6 0%, #C790F1 50%, #5092FF 100%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -172,7 +177,6 @@ body {
     .hero__container{
         flex-direction: row;
         justify-content: space-around;
-        padding: 0px 42px;
     }
 
     .hero__title {
@@ -188,7 +192,6 @@ body {
 
 @media screen and (min-width: 1025px) {
     .hero__container{
-        padding: 0px 80px;
         justify-content: space-between;
         max-width: 1366px;
     }
@@ -211,6 +214,8 @@ body {
 
 /* Sección About Me */
 
+/* ------------------------------------ */
+
 .about {
     background-color: #141414;
     height: fit-content;
@@ -225,8 +230,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 25px;
+    margin: 0px 36px;
     max-width: 375px;
+    width: 100%;
 }
 
 .about__text--wrapper {
@@ -234,7 +240,7 @@ body {
     flex-direction: column;
     color: #fff;
     text-align: center;
-    padding: 0px 25px;
+    width: 100%;
 }
 
 .about__title {
@@ -258,10 +264,6 @@ body {
 
 @media screen and (max-width: 281px) {
 
-    .about__container {
-        padding: 0 10px;
-    }
-
     .about__title {
         font-size: 1.1rem;
     }
@@ -278,18 +280,19 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 45px;
     }
 
     .about__container {
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        max-width: 1366px;
+        max-width: 550px;
+        margin: 45px 0px;
     }
 
     .about__text--wrapper {
-        margin-left: 50px;
+        margin: 0px 0px 0px 50px;
+        padding: 0px;
         text-align: left;
     }
 
@@ -301,10 +304,20 @@ body {
     }
 }
 
+@media screen and (min-width: 1365px) {
+    .about__container {
+        margin: 64px 0px;
+        max-width: 700px;
+    }
+}
+
 
 /* ------------------------------------ */
 
 /* Sección servicios */
+
+/* ------------------------------------ */
+
 
 .services {
     background-color: #0C0C0C;
@@ -312,7 +325,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 42px 25px;
+    margin: 48px 25px 0px 25px;
+    max-width: 375px;
     width: 100%;
 }
 
@@ -322,6 +336,7 @@ body {
     font-size: 2rem;
     color: #fff;
     text-align: center;
+    margin: 0px;
 }
 
 .services__cards {
@@ -330,7 +345,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding: 0px 25px;
+    margin: 48px;
     grid-gap: 3rem;
     max-width: 375px;
 }
@@ -363,21 +378,27 @@ body {
 
 @media screen and (min-width: 767px) {
     .services {
-        padding: 42px 45px;
+        margin: 48px 0px;
     }
+
     .services__cards {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 100%;
+        max-width: 700px;
+        margin: 36px 0px;
+        width: 100%;
+        grid-gap: 5rem;
     }
 }
 
 @media screen and (min-width: 1023px) {
     .services {
-        padding: 64px 80px;
+        margin: 80px 0px;
+        max-width: 900px;
+        width: 100%;
     }
 
-    .services__container{
-        max-width: 1366px;
+    .services__cards {
+        margin: 0px;
     }
 
     .services__title {
@@ -390,9 +411,36 @@ body {
     }
 }
 
+@media screen and (min-width: 1365px) {
+    .services {
+        max-width: 1200px;
+    }
+
+    .services__cards {
+        grid-gap: 6rem;
+    }
+}
+
+@media screen and (min-width: 1919px) {
+    .services {
+        margin: 110px 0px;
+        max-width: 1320px;
+    }
+
+    .services__cards {
+        max-width: 1366px;
+        grid-gap: 8rem;
+        width: 100%;
+    }
+}
+
+
 /* ------------------------------------ */
 
 /* Sección Escribime */
+
+/* ------------------------------------ */
+
 
 .contact {
     background-color: #141414;
@@ -400,15 +448,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    margin: 0px;
     width: 100%;
 }
 
 .contact__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 36px 0px;
 }
 
 .contact__title {
@@ -490,15 +540,15 @@ body {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-        padding: 60px 0px;
+        padding: 36px 0px;
     }
 
     .contact__container {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-        min-width: 700px;
-        max-width: 1366px;
+        max-width: 700px;
+        width: 100%;
     }
 
     .contact__title {
@@ -520,6 +570,9 @@ body {
 
 /* Sección footer */
 
+/* ------------------------------------ */
+
+
 .footer {
     background-color: #0C0C0C;
     width: 100%;
@@ -529,15 +582,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px 35px;
+    margin: 36px 36px;
 }
 
 .footer__logo--wrapper {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
 }
 
 .footer__logo{
@@ -555,7 +607,7 @@ body {
 .footer__social-media--container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+
 }
 
 .footer__social-media--link {
@@ -569,7 +621,7 @@ body {
 }
 
 .footer__social-media--logo {
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 .footer__social-media--title {
@@ -593,16 +645,20 @@ body {
     color: #0C0C0C;
     font-family: "poppins", sans-serif;
     font-size: 0.875rem;
+    margin: 0px;
+}
+
+@media screen and (min-width: 539px) {
+
+    .footer__links--container {
+        margin: 36px 54px;
+    }
 }
 
 @media screen and (min-width: 767px) {
 
-    .footer {
-        padding-top: 3rem;
-    }
-
     .footer__container {
-        max-width: 1366px;
+        max-width: 100%;
     }
 
     .footer__links--container {
@@ -610,16 +666,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0rem 3rem 3rem 3rem;
-    }
-
-    .footer__social-media--container {
-        padding-bottom: 0rem;
-    }
-
-    .footer__credits {
-        padding: 0px;
-        margin: 0px;
+        margin: 36px 48px 36px 48px;
     }
 
     .footer__credits--text {
@@ -628,8 +675,15 @@ body {
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1365px) {
+
     .footer__links--container {
-        padding: 0rem 5rem 3rem 5rem;
+        margin: 36px 80px 36px 80px;
+    }
+}
+
+@media screen and (min-width: 1919px) {
+    .footer__links--container {
+        margin: 64px 300px 64px 300px;
     }
 }
